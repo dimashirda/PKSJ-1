@@ -30,5 +30,19 @@ Hapus comment pada baris
   ```bash
   vagrant ssh
   ```
+  
+### 2. Instalasi openssh-server pada Vagrant
 
+1.  Update repositori
+  ```bash
+  sudo apt-get update
+  ```
+2.  Install openssh-server
+  ```bash
+  sudo apt-get install openssh-server
+  ```
+3.  Cek apakah openssh-server sudah terinstall
+  ```bash
+  sudo service ssh status
+  ```
  
