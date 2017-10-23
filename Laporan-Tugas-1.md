@@ -31,7 +31,7 @@ Hapus comment pada baris
   vagrant ssh
   ```
   
-### 2. Instalasi openssh-server pada Vagrant
+### 2. Instalasi dan setup openssh-server pada Vagrant
 
 1.  Update repositori
   ```bash
@@ -45,4 +45,9 @@ Hapus comment pada baris
   ```bash
   sudo service ssh status
   ```
- 
+4.  Set password pada openssh-server
+  ```bash
+  sudo -s
+  passwd
+  ```
+
