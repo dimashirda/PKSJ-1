@@ -55,14 +55,14 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
   ```
   Dalam kasus ini password dalam server kami : tes
 
-### 3. Instalasi Hydra pada terminal desktop
+### 3. Instalasi Tools Hydra,Ncrack, dan Medusa pada terminal desktop
 1.  Buka terminal baru di desktop
 
 2.  Update repositori
   ```bash
   sudo apt-get update
   ```
-3.  Install Tool yang dibutuhkan terlebih dahulu untuk Hydra
+3.  Install Tool yang dibutuhkan terlebih dahulu untuk tools
   ```bash
   sudo apt-get install build-essential checkinstall libssl-dev libssh-dev
   ```
@@ -70,17 +70,46 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
   ```bash
   sudo apt-get install hydra
   ```
-5.  Cek installasi
+5. Install Ncrack
+
+a. Buka link https://nmap.org/ncrack/ dan install ncrack-0.5.tar.gz
+
+b. Extrack dan compile file
+  ```bash
+tar -xzf ncrack-0.5.tar.gz
+cd ncrack-0.5
+./configure
+make
+su root
+make install
+  ```      
+  
+6.  Cek installasi
  ```bash
   hydra
   ```
-  Jika keluar manual penggunaan hydra, maka hydra telah terinstall.
+  
+   ```bash
+  ncrack
+  ```
+  
+  Jika keluar manual penggunaan tools, maka tools telah terinstall.
+ 
+  
 ### 4. Penggunaan Hydra
-1. Penggunaan hydra harus mempunyai list keyword password terlebih dahulu.
-   Maka buat txt berisi list possible password.
+1. Penggunaan hydra harus mempunyai list keyword password terlebih dahulu
+   Maka buat txt berisi list possible password
  ```bash
-  nano list.txt
+  gedit list.txt
   ```   
   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang4.png)
   
-  Perhatikan bahwa password yang benar berada di urutan terakhir untuk mempersulit pencarian.
+  Perhatikan bahwa password yang benar berada di urutan terakhir untuk mempersulit pencarian
+
+2. Gunakan Hydra ke arah IP ssh-server
+ ```bash
+  hydra -l [username] -P [listtextpassword] [iptarget] -t [jumlahthread] ssh
+  ```   
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang5.png)
+  
+ 
