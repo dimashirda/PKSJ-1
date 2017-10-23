@@ -47,7 +47,7 @@ Hapus comment pada baris
   ```
 4.  Set password pada openssh-server
   ```bash
-  sudo -s
+  sudo su
   passwd
   ```
 
