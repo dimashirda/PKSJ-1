@@ -22,6 +22,8 @@ Hapus comment pada baris
 * config.vm.network "private_network", ip:
 * save Vagrantfile
 
+Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
+
 4.  Jalankan Vagrant
   ```bash
   vagrant up
@@ -67,4 +69,12 @@ Hapus comment pada baris
   ```bash
   sudo apt-get install hydra
   ```
-5.  
+5.  Cek installasi
+ ```bash
+  hydra
+  ```
+  Jika keluar manual penggunaan hydra, maka hydra telah terinstall.
+### 4. Penggunaan Hydra
+1. Penggunaan hydra harus mempunyai list keyword password terlebih dahulu.
+   Maka buat txt berisi list possible password.
+   
