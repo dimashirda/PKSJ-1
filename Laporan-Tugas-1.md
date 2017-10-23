@@ -68,8 +68,7 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
   sudo apt-get install build-essential checkinstall libssl-dev libssh-dev
   ```
 4.  Install Hydra
-  ```bash
-  sudo apt-get install hydra
+  ```bashT  sudo apt-get install hydra
   ```
 5. Install Ncrack
 
@@ -135,4 +134,4 @@ sudo apt-get install medusa
  ```bash
  medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
  ```
-  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/tugas%201/medusacomplete.png)
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/medusacomplete.png)
