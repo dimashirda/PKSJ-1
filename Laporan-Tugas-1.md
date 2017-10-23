@@ -28,6 +28,7 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
   ```bash
   vagrant up
   ```
+
 5. Masuk kedalam vagrant
   ```bash
   vagrant ssh
@@ -77,4 +78,9 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
 ### 4. Penggunaan Hydra
 1. Penggunaan hydra harus mempunyai list keyword password terlebih dahulu.
    Maka buat txt berisi list possible password.
-   
+ ```bash
+  nano list.txt
+  ```   
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang4.png)
+  
+  Perhatikan bahwa password yang benar berada di urutan terakhir untuk mempersulit pencarian.
