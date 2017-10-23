@@ -50,4 +50,21 @@ Hapus comment pada baris
   sudo su
   passwd
   ```
+  Dalam kasus ini password dalam server kami : tes
 
+### 3. Instalasi Hydra pada terminal desktop
+1.  Buka terminal baru di desktop
+
+2.  Update repositori
+  ```bash
+  sudo apt-get update
+  ```
+3.  Install Tool yang dibutuhkan terlebih dahulu untuk Hydra
+  ```bash
+  sudo apt-get install build-essential checkinstall libssl-dev libssh-dev
+  ```
+4.  Install Hydra
+  ```bash
+  sudo apt-get install hydra
+  ```
+5.  
