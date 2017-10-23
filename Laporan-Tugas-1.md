@@ -56,6 +56,7 @@ Perhatikan dalam kasus kami, IP vagrant : 192.168.33.10
   Dalam kasus ini password dalam server kami : tes
 
 ### 3. Instalasi Tools Hydra,Ncrack, dan Medusa pada terminal desktop
+
 1.  Buka terminal baru di desktop
 
 2.  Update repositori
@@ -129,3 +130,9 @@ sudo apt-get install medusa
   
   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang6.png)
   
+### 6. Penggunaan Medusa
+1. Jalankan Medusa
+ ```bash
+ medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+ ```
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/tugas%201/medusacomplete.png)
