@@ -83,15 +83,23 @@ make
 su root
 make install
   ```      
-  
-6.  Cek installasi
+6. Install Medusa
+
  ```bash
-  hydra
-  ```
+sudo apt-get install medusa
+  ```  
   
+  
+7.  Cek installasi
+ ```bash
+ hydra
+  ``` 
    ```bash
   ncrack
   ```
+   ```bash
+  medusa
+```  
   
   Jika keluar manual penggunaan tools, maka tools telah terinstall.
  
@@ -106,10 +114,18 @@ make install
   
   Perhatikan bahwa password yang benar berada di urutan terakhir untuk mempersulit pencarian
 
-2. Gunakan Hydra ke arah IP ssh-server
+2. Jalankan Hydra
  ```bash
-  hydra -l [username] -P [listtextpassword] [iptarget] -t [jumlahthread] ssh
+  hydra -l [username] -P [text_password] [ip_target] -t [jumlah_thread] [tipe_protocol]
   ```   
   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang5.png)
   
- 
+### 5. Penggunaan Ncrack
+1. Jalankan Ncrack
+
+ ```bash
+  ncrack -p [port] --user [username] -P [text_password] [ip_target]
+  ```   
+  
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/serang6.png)
+  
