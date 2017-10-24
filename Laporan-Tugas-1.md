@@ -154,3 +154,44 @@ sudo service fail2ban status
 ```bash
 sudo apt-get install iptables-persistent
 ```
+5.  Mengganti Setting fail2ban
+```bash
+sudo nano /etc/fail2ban/jail.conf
+```
+
+Ganti settingan bantime dan maxretry sesuai kebutuhan
+
+```bash
+[DEFAULT]
+. . .
+bantime = 600
+findtime = 600
+maxretry = 3
+. . .
+```
+
+6. Membuat Base Firewall
+```bash
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
+sudo iptables -A INPUT -j DROP
+```
+
+Lihat iptables dengan sudo iptables -s
+
+7. Start fail2ban service
+```bash
+sudo service fail2ban start
+```
+
+Lihat perubahan iptables.
+
+
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/fail2ban4.png)
+
+Jika anda coba bruteforce dengan tools apapun, maka iptables akan berubah menjadi seperti dibawah.
+
+
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/fail2banafter.png)
