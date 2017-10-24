@@ -135,3 +135,22 @@ sudo apt-get install medusa
  medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
  ```
   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/medusacomplete.png)
+  
+### 7. Instalasi dan penggunaan fail2ban
+
+1.  Update Repositori
+```bash
+sudo apt-get update
+```
+2.  Install fail2ban
+```bash
+sudo apt-get install fail2ban
+```
+3.  Cek status fail2ban
+```bash
+sudo service fail2ban status
+```
+4.  Selain itu kita juga perlu menginstall iptables-persistent
+```bash
+sudo apt-get install iptables-persistent
+```
