@@ -195,3 +195,9 @@ Jika anda coba bruteforce dengan tools apapun, maka iptables akan berubah menjad
 
 
   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/fail2banafter.png)
+  
+ Hasil yang ditampilkan di pc Penyerang:
+ 
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/medusagagal.png)
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/ncrackgagal.png)
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%201/hydragagal.png)
