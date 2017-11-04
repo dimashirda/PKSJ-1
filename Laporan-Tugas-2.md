@@ -61,4 +61,13 @@ Dimas Hirda P | 5114100147
     sudo systemctl restart apache2.service
     sudo systemctl restart mysql.service
     ```
+ 6. Buka Halaman wordpress anda muncul tampilan seperti ini jika instalasi berhasil
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/install1.png)
+ 7. Isi kolom yang diperlukan
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/install2.png)
+    
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/install3.png)
+    
+ 8. Login dengan akun yang sudah dibuat
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/login1.png)
     
