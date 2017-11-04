@@ -84,7 +84,7 @@ Dimas Hirda P | 5114100147
 ### Sql injection dengan wpscan
 1. memindai vulnerabilities dari plugin yang telah diinstall menggunakan wpscan
   ```bash
-  wpscan -u 192.1681.15/wordpress --enumerate vp
+  wpscan -u 192.168.1.15/wordpress --enumerate vp
   ```
    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan1.png)
 2. tunggu hingga proses pemindaian vulnerabilities wpscan selesai
