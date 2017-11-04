@@ -36,10 +36,29 @@ Dimas Hirda P | 5114100147
     ```bash
     sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd 
     ```
- 4. Membuat Database Wordpress
+ 4. Membuat Database untuk Wordpress
     ```sql
     CREATE DATABASE wpdb;
     GRANT ALL PRIVILEGES ON wpdb.* TO 'admin'@'localhost' IDENTIFIED BY 'tes';
     FLUSH PRIVILEGES;
     EXIT;
     ```
+ 5. Download , install dan setting Wordpress
+    ```bash
+    wget -c http://wordpress.org/latest.tar.gz
+    tar -xzvf latest.tar.gz
+    sudo chown -R www-data:www-data /var/www/html/wordpress
+    sudo chmod -R 755 /var/www/html/wordpress
+    cd /var/www/html/wordpress
+    sudo mv wp-config-sample.php wp-config.php
+    ```
+    Setting konfigurasi untuk mysql
+    ```bash
+    sudo nano wp-config.php
+    ```
+    Restart Apache dan Mysql
+    ```bash
+    sudo systemctl restart apache2.service
+    sudo systemctl restart mysql.service
+    ```
+    
