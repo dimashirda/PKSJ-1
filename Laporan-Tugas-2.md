@@ -79,10 +79,13 @@ Dimas Hirda P | 5114100147
     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add2.png)
     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add3.png)
     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add4.png)
- 4. Pilih activate now
+ 4. Pilih activate plugin
  
 ### Sql injection dengan wpscan
 1. memindai vulnerabilities dari plugin yang telah diinstall menggunakan wpscan
+  ```bash
+  wpscan -u 192.1681.15/wordpress --enumerate vp
+  ```
    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan1.png)
 2. tunggu hingga proses pemindaian vulnerabilities wpscan selesai
    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan2.png)
