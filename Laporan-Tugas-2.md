@@ -27,11 +27,19 @@ Dimas Hirda P | 5114100147
  
 ### Installasi Wordpress
  1. Pastikan LAMP stack sudah terinstall, jika belum ikuti langkah berikut
- 2. ```bash
+ 2. 
+    ```bash
     sudo apt-get update && apt-get upgrade
     sudo apt-get install lamp-server^
     ```
  3. Install PHP modules
     ```bash
-    sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd ```
- 4. 
+    sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd 
+    ```
+ 4. Membuat Database Wordpress
+    ```sql
+    CREATE DATABASE wpdb;
+    GRANT ALL PRIVILEGES ON wpdb.* TO 'admin'@'localhost' IDENTIFIED BY 'tes';
+​   FLUSH PRIVILEGES;
+​   EXIT;
+    ```
