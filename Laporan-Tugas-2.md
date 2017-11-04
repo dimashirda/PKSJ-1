@@ -8,6 +8,7 @@ Rian Danis  | 5114100084
 Naufan Arifie | 5114100136
 Dimas Hirda P | 5114100147
 
+https://www.techrepublic.com/article/how-to-install-wordpress-on-ubuntu-16-04/
 ### Dasar Teori
 #### 1. OS
   * Ubuntu 16.04
