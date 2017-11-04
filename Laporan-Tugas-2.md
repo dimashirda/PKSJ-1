@@ -71,3 +71,19 @@ Dimas Hirda P | 5114100147
  8. Login dengan akun yang sudah dibuat
     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/login1.png)
     
+### Instalasi Plugin
+ 1. Unduh plugin Wordpress Video Player v.1.5.16
+ 2. Login ke wordpress, pilih add new pada navigasi plugin
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add1.png)
+ 3. Unggah file yang telah diunduh dan pilih install now
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add2.png)
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add3.png)
+    ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/add4.png)
+ 4. Pilih activate now
+ 
+### Sql injection dengan wpscan
+1. memindai vulnerabilities dari plugin yang telah diinstall menggunakan wpscan
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan1.png)
+2. tunggu hingga proses pemindaian vulnerabilities wpscan selesai
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Tugas%202/wpscan2.png)
+ 
