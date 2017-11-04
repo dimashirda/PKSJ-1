@@ -40,6 +40,6 @@ Dimas Hirda P | 5114100147
     ```sql
     CREATE DATABASE wpdb;
     GRANT ALL PRIVILEGES ON wpdb.* TO 'admin'@'localhost' IDENTIFIED BY 'tes';
-​   FLUSH PRIVILEGES;
-​   EXIT;
+    FLUSH PRIVILEGES;
+    EXIT;
     ```
