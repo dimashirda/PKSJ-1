@@ -25,3 +25,7 @@ Dimas Hirda P | 5114100147
  * SQL Map
  * Wpscan
  
+### Installasi Wordpress
+ 1. Pastikan LAMP stack sudah terinstall
+ 2. ```bash
+ 
