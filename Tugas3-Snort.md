@@ -28,3 +28,41 @@ Komponen – komponen Snort IDS (Intrusion Detection System) meliputi :
 **Install dependencies**
 
 Sebelum menginstall Snort, terlebih dahulu menginstall file yang dibutuhkan oleh Snort.
+ ```bash
+  apt-get install openssh-server ethtool build-essential libpcap-dev libpcre3-dev libdumbnet-dev bison flex zlib1g-dev liblzma-dev openssl libssl-dev
+  ```
+  
+  Lalu, install DAQ
+  ```bash
+  wget https://www.snort.org/downloads/snort/daq-2.0.6.tar.gz
+  ```
+   
+  Setelah DAQ selesai didownload, extract file dan install file DAQ
+  
+  ```bash
+  tar -zxvf daq-2.0.6.tar.gz
+  cd daq-2.0.6
+  ./configure && make && make install 
+  ```
+  **Install Snort**
+  Install Snort dengan command:
+  ```bash
+  sudo apt-get install snort
+  ```
+   **Download file PCAP**
+  Donwload file Pcap yang telah disediakan oleh SecRepo pada http://www.secrepo.com/
+  
+   **Running Snort**
+   Setelah mendapatkan file pcap, jalankan Snort pada folder yang sama pada Pcap dengan command:
+    ```bash
+    sudo snort -v -c /etc/snort/snort.conf -r "namafile"
+    ```
+   
+   **Gambar Percobaan kami**
+   
+   
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Snort/snortrun.png)
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Snort/snortresult1.png)
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Snort/snortresult2.png)
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Snort/snortresult3.png)
+   
