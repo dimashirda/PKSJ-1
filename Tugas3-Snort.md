@@ -3,7 +3,7 @@
 
 Anggota Kelompok
 - Naufan Arifie S   5114100136
-- Rian Danis P.     5114100132
+- Rian Danis P.     5114100084
 - Dimas Hirda P.    5114100147 
 
 ## Pendahuluan
