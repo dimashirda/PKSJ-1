@@ -2,9 +2,9 @@
 
 
 Anggota Kelompok
-- Ardi Nusawan      5113100096
-- Gian Sebastian A. 5113100132
-- Ronauli Sidabukke 5113100142 
+- Naufan Arifie S   5114100136
+- Rian Danis P.     5114100132
+- Dimas Hirda P.    5114100147 
 
 ## Pendahuluan
 **SNORT**
