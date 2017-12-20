@@ -62,7 +62,7 @@ Dimas Hirda P | 5114100147
      - Navigasi ke folder download
           -<i> tar -xvzf distorm-3.4.0.tar.gz</i>
      - Navigasi ke folder distorm-3.4.0
-          - cd /home/Username/Downloads/distorm-3.4.0
+          - <i> cd /home/Username/Downloads/distorm-3.4.0</i>
      - <i> sudo python setup.py install</i>
 - Yara
     - Instal autoreconf
@@ -71,9 +71,9 @@ Dimas Hirda P | 5114100147
          -<i> sudo apt-get isntall libtool-bin</i>
     - Download Yara
     - Navigasi ke download folder
-         - tar -xvzf yara-3.5.0.tar.gz
+         - <i> tar -xvzf yara-3.5.0.tar.gz</i>
     - Navigasi ke folder yara-3.5.0
-         - cd /home/Username/Downloads/yara-3.5.0
+         - <i> cd /home/Username/Downloads/yara-3.5.0 </i>
     - <i> ./bootstrap.sh</i>
     - <i> /configure --withcrypto --enable-magic --enable-cuckoo </i>
     - <i> make </i>
@@ -88,11 +88,11 @@ Dimas Hirda P | 5114100147
     - <i> python setup.py build</i>
     - <i> sudo python setup.py install</i>
 - Openpyxl
-    -,i>sudo -H pip install openpyxl</i>
+    - <i>sudo -H pip install openpyxl</i>
 - UJSON
-    -<i> sudo -H pip install ujson</i>
+    - <i> sudo -H pip install ujson</i>
 -IPython
-    -<i> sudo -H pip install jupyter</i>
+    - <i> sudo -H pip install jupyter</i>
     
 #### 9 Instal Mitmproxy
 - <i> sudo apt-get install python3-pip python3-dev libssl-dev libtiff5-dev libjpeg8-dev zlib1g-dev libwebp-dev </i>
