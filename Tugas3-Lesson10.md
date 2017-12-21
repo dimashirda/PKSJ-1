@@ -20,11 +20,11 @@ Dimas Hirda P | 5114100147
   #### 2. Ganti url
   Merubah url password menjadi password yang lain, misal "test123"
   
-  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%2010/change_to_test.PNG)
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%2010/Change_to_test.PNG)
   
   Logout, dan login lagi dengan password baru
   
-  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%2010/Login.PNG)
+  ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Lesson%2010/login_again.PNG)
   
   #### 3. Mengganti password melalui Curl
   Ambil cookie dengan memasukkan script di menu xss reflected
