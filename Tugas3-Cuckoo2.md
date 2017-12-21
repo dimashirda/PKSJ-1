@@ -17,10 +17,13 @@ Dimas Hirda P | 5114100147
 #### cuckoo.conf
 - <i>nano cuckoo.conf</i>
     - [cuckoo]
-        - memory_dump = on
+        - memory_dump = yes
         - machinery = virtualbox atau vmware
     - [resultserver]
         - ip = (ip dari host system, bukan virtual machine)
+        
+        
+        
 
 #### auxiliary.conf
 - <i> nano auxiliary.conf</i>
@@ -43,14 +46,6 @@ Dimas Hirda P | 5114100147
     - [memory]
         - enable = yes
 
-#### memory.conf
-- <i>nano memory.conf</i>
-    -[basic]
-        -guest_profile = nama profil volatility dari guest operating system
-
-#### reporting.conf
-- <i> nano reporting.conf</i>
-    - [reporthtml]
-        - enable = yes
-    - [mongodb]
-        - enable = yes
+   ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Cuckoo/cuckoobaru.png)
+     ![alt text](https://github.com/dimashirda/PKSJ-1/blob/master/PKSJ/Cuckoo/cuckoobaru2.png)
+  
